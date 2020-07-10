@@ -8,3 +8,5 @@ Tour Plan
 
 Куратор
 Александр Ярославцев
+
+https://catydaty.github.io/tour-plan/
