@@ -478,7 +478,7 @@ template {
   }
   .navbar-menu__link {
     font-size: 12px;
-    line-height: 15;
+    line-height: 15px;
   }
   .search__input {
     max-width: 340px;
