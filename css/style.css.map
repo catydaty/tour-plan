@@ -7,7 +7,7 @@
         "../sass/_settings.sass",
         "../sass/_normalize.scss",
         "../sass/blocks/_header.sass",
-        "../sass/blocks/_media.sass"
+        "../sass/_media.sass"
     ],
     "names": [],
     "file": "style.css"
