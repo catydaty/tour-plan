@@ -600,12 +600,12 @@ template {
   background-color: transparent;
 }
 
-.slider-button--next {
+.slider-button__next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button--prev {
+.slider-button__prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
@@ -713,7 +713,7 @@ template {
 }
 
 .map {
-  width: 347px;
+  width: 100%;
   height: 213px;
   border-radius: 10px;
   overflow: hidden;

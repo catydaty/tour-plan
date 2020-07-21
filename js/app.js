@@ -4,8 +4,8 @@ var mySwiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.slider-button__next',
+    prevEl: '.slider-button__prev',
   },
   effect: 'coverflow',
   keyboard: {
