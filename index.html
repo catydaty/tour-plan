@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Best Tour Plan - Hotel Booking</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700&display=swap"
@@ -10,6 +14,10 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ce43402d-1239-4981-8065-853a294bd32c&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -219,13 +227,13 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
+            <div id="map" class="map">
+              <!-- <iframe
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa9434271837a07c5063cb7d28d2273ef914da370bfb2b072f58ae452116f5fc&amp;source=constructor"
                 width="100%"
                 height="213"
                 frameborder="0"
-              ></iframe>
+              ></iframe> -->
             </div>
             <!-- /.map -->
           </div>
