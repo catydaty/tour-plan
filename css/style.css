@@ -724,10 +724,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter:before {
@@ -1069,6 +1065,10 @@ template {
     transform: translate(50%, 0);
     margin-right: -65px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1089,6 +1089,10 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */

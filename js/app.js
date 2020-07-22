@@ -1,3 +1,4 @@
+/* добавляем слайдеры */
 var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
@@ -28,7 +29,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
-
+/* добавляет метку на карту */
 var myMap;
 
 ymaps.ready(init);
@@ -48,3 +49,6 @@ function init() {
 
   myMap.geoObjects.add(myGeoObject);
 };
+
+/* добавляем эффект паралакса */
+$('.parallax-window').parallax({ imageSrc: 'img/newsletter-bg.jpeg' });
