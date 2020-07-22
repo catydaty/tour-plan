@@ -4,6 +4,8 @@
   .slider
     width: 600px
   .hotel
+    &__slider
+      margin-right: 22px
     &-slider
       &__image
         width: 100%
@@ -64,6 +66,7 @@
       align-items: center
       justify-content: space-between
       flex-direction: column
+      background: transparent
       &__line
         width: 16px
         height: 1px
@@ -110,7 +113,7 @@
         &:after, &:before
           display: none
       &__button
-        top: 45px
+        top: 32px
         &_prev
           left: 50%
           transform: translate(-50%, 0)
@@ -126,6 +129,8 @@
   .logo
     width: 99px
   .hotel
+    padding-top: 0
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
     &-slider
@@ -133,10 +138,24 @@
   .newsletter
     padding: 76px 0 83px 0
     &__title
+      font-size: 20px;
+      line-height: 25px;
       margin-bottom: 37px
+    &-title
+      &__strong
+        margin-top: 5px
+        font-size: 30px
+        line-height: 38px
   .subscribe
     width: 100%
+    &__button
+      font-size: 12px;
+      line-height: 15px;
   .reviews
     &__title
       font-size: 18px
       line-height: 23px
+      margin-bottom: 42px
+    &-slider
+      &__text
+        text-align: left
