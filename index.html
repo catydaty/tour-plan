@@ -10,8 +10,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=ce43402d-1239-4981-8065-853a294bd32c&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ce43402d-1239-4981-8065-853a294bd32c&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar">
@@ -221,14 +220,7 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map">
-              <!-- <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa9434271837a07c5063cb7d28d2273ef914da370bfb2b072f58ae452116f5fc&amp;source=constructor"
-                width="100%"
-                height="213"
-                frameborder="0"
-              ></iframe> -->
-            </div>
+            <div id="map" class="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -236,6 +228,23 @@
         <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title newsletter__title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input
+            type="text"
+            class="subscribe__input"
+            placeholder="Your email address"
+          />
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
     </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
