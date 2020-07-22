@@ -1,11 +1,11 @@
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button_next',
-    prevEl: '.slider-button_prev',
+    nextEl: '.hotel-slider__button_next',
+    prevEl: '.hotel-slider__button_prev',
   },
   effect: 'coverflow',
   keyboard: {
@@ -13,9 +13,26 @@ var mySwiper = new Swiper('.swiper-container', {
     onlyInViewport: false,
   },
 });
+var reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
+  },
+  effect: 'slide',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
 
 var myMap;
+
 ymaps.ready(init);
+
 function init() {
   myMap = new ymaps.Map('map', {
     center: [7.838196, 98.298813], // Hilton
