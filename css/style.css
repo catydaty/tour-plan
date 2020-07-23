@@ -531,6 +531,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
 }
 
 .hotel-slider__item {
@@ -998,7 +999,7 @@ template {
     max-width: 960px;
   }
   .slider {
-    width: 600px;
+    width: 60 0px;
   }
   .hotel__slider {
     margin-right: 22px;

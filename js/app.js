@@ -24,6 +24,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button_prev',
   },
   effect: 'slide',
+  autoHeight: true,
   keyboard: {
     enabled: true,
     onlyInViewport: false,
