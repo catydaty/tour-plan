@@ -1147,6 +1147,8 @@ template {
 
 .footer-bottom__leftside {
   grid-column-start: 2;
+  margin-left: auto;
+  margin-right: 35px;
 }
 
 .footer-bottom__rightside {
@@ -1157,7 +1159,7 @@ template {
 .ul-links {
   display: grid;
   grid-template: 1fr/repeat(3, auto);
-  grid-gap: 15px;
+  grid-gap: 5px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1478,8 +1480,12 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-bottom: 21px;
+  }
   .footer-wrapper {
     grid-template-columns: 1fr;
+    margin-bottom: 30px;
   }
   .footer__logo {
     grid-row: 1;
@@ -1501,13 +1507,37 @@ template {
     grid-row: 5;
     grid-column: 1;
   }
-  .footer__contact-detalies {
+  .footer__contact-details {
     grid-row: 6;
     grid-column: 1;
   }
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+  }
+  .footer__message {
+    margin-bottom: 15px;
+  }
+  .footer__form {
+    flex-wrap: wrap;
+  }
+  .footer__info {
+    flex-basis: 100%;
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    order: 2;
+  }
+  .footer-bottom {
+    grid-template: repeat(2, 1fr)/1fr;
+  }
+  .footer-bottom__leftside, .footer-bottom__rightside {
+    justify-content: flex-start;
+  }
+  .footer-bottom__leftside {
+    grid-column-start: 1;
+    margin: 0 0 20px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -231,8 +231,10 @@
   .card
     width: 100%
   .footer
+    padding-bottom: 21px
     &-wrapper
       grid-template-columns: 1fr
+      margin-bottom: 30px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -250,9 +252,26 @@
       grid-row: 5
       grid-column: 1
     &__contact
-      &-detalies
+      &-details
           grid-row: 6
           grid-column: 1
       &-form
         grid-row: 7
         grid-column: 1
+    &__message
+      margin-bottom: 15px
+    &__form
+      flex-wrap: wrap
+    &__info
+      flex-basis: 100%
+      order: 1
+      margin-bottom: 15px
+    &__button
+      order: 2
+    &-bottom
+      grid-template: repeat(2, 1fr) / 1fr
+      &__leftside, &__rightside
+        justify-content: flex-start
+      &__leftside
+        grid-column-start: 1
+        margin: 0 0 20px 0
