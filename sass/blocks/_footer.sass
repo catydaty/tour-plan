@@ -105,38 +105,39 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+
   &-bottom
-    margin-top: 20px
     display: grid
     grid-template: 1fr / repeat(3, 1fr)
-    max-width: 1200px
-    padding: 25px 15px
-    margin: auto
-    &__ul
-      display: grid
-      grid-template: 1fr / repeat(3, minmax(116px, 1fr))
-      list-style: none
-      margin: 0
-      padding: 0
-    &__link
-      text-decoration: none 
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: $light
+    // max-width: 1200px
+    // margin: auto
     &__leftside
       grid-column-start: 2
     &__rightside
-      display: grid
+      // display: grid
+      // grid-template: 1fr / repeat(5, 80px)
       justify-content: flex-end
-    &__ul_r
-      display: flex
-      align-items: center
-      max-width: 136px
-      height: 22px
-      list-style: none
-      margin: 0 10px 10px 0
-      padding: 0
-    &__image_item
-      margin: 0 4px 0 4px
+    .ul
+      &-links
+        display: grid
+        grid-template: 1fr / repeat(3, minmax(100px, 1fr))
+        list-style: none
+        margin: 0
+        padding: 0
+      &-images
+        display: grid
+        grid-template: 1fr / repeat(5, minmax(50px, 1fr)
+        list-style: none
+        margin: 0
+        padding: 0
+
+
+
+
+  // &__link
+  //   text-decoration: none 
+  //   font-style: normal
+  //   font-weight: normal
+  //   font-size: 12px
+  //   line-height: 15px
+  //   color: $light
