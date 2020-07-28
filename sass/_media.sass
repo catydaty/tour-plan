@@ -176,6 +176,15 @@
   .footer
     &__input
       flex-basis: 100%
+    &-bottom
+      grid-template: repeat(2, 1fr) / 1fr
+      &__leftside
+        grid-row-start: 1
+      &__rightside
+        justify-content: flex-start
+  .ul
+    &-links
+      max-width: 300px
 @media (max-width: 576px)
   .logo
     width: 99px

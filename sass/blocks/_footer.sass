@@ -114,30 +114,31 @@
     &__leftside
       grid-column-start: 2
     &__rightside
-      // display: grid
+      display: grid
       // grid-template: 1fr / repeat(5, 80px)
       justify-content: flex-end
-    .ul
-      &-links
-        display: grid
-        grid-template: 1fr / repeat(3, minmax(100px, 1fr))
-        list-style: none
-        margin: 0
-        padding: 0
-      &-images
-        display: grid
-        grid-template: 1fr / repeat(5, minmax(50px, 1fr)
-        list-style: none
-        margin: 0
-        padding: 0
-
-
-
-
-  // &__link
-  //   text-decoration: none 
-  //   font-style: normal
-  //   font-weight: normal
-  //   font-size: 12px
-  //   line-height: 15px
-  //   color: $light
+.ul
+  &-links
+    display: grid
+    grid-template: 1fr / repeat(3, auto)
+    grid-gap: 15px
+    list-style: none
+    margin: 0
+    padding: 0
+    &__link
+      text-decoration: none 
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+  &-images
+    display: grid
+    grid-template: 1fr / repeat(5, minmax(32px, 1fr))
+    list-style: none
+    min-width: 136px
+    margin: 0
+    padding: 0
+    &__image
+      max-width: 50px
+      max-height: 20px
