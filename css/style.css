@@ -1418,6 +1418,15 @@ template {
   }
 }
 
+@media (max-width: 720px) {
+  .footer-bottom {
+    grid-template: 1fr/repeat(2, 1fr);
+  }
+  .footer-bottom__rightside {
+    grid-column-start: 2;
+  }
+}
+
 @media (max-width: 576px) {
   .logo {
     width: 99px;

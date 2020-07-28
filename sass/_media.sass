@@ -184,6 +184,12 @@
   .ul
     &-links
       max-width: 300px
+@media (max-width: 720px)
+  .footer
+    &-bottom
+      grid-template: 1fr / repeat(2, 1fr)
+      &__rightside
+        grid-column-start: 2
 @media (max-width: 576px)
   .logo
     width: 99px
