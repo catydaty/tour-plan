@@ -32,6 +32,8 @@
       padding-top: 22px
       padding-bottom: 22px
       &__link
+        font-style: normal
+        font-weight: bold
         font-size: 12px
         line-height: 15px
   .search
@@ -99,9 +101,49 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
+      &__mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      &__visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: bold
+        &__mobile
+          &_visible
+            display: block
+  .user
+    &__name
+      &_light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .menu
     &-button
       width: 16px
@@ -200,6 +242,9 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .search
+    &__input
+      max-width: 245px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -259,8 +304,8 @@
       grid-column: 1
     &__contact
       &-details
-          grid-row: 6
-          grid-column: 1
+        grid-row: 6
+        grid-column: 1
       &-form
         grid-row: 7
         grid-column: 1

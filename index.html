@@ -13,7 +13,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ce43402d-1239-4981-8065-853a294bd32c&lang=ru_RU"></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -24,7 +24,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search__mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -35,7 +38,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user__mobile_hidden">
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -56,6 +59,31 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item__mobile_visible">
+              <a href="#" class="user navbar__user navbar__user__mobile_visible">
+                <img
+                  src="img/user-avatar.jpeg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light ">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item__mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search__mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
