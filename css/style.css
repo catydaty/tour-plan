@@ -1371,6 +1371,7 @@ template {
     padding: 0;
     border: none;
     cursor: pointer;
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
