@@ -35,7 +35,15 @@ try {
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
     // проверка на ошибку
+<<<<<<< HEAD
     $mail->SMTPDebug = 2; 
+=======
+<<<<<<< HEAD
+    $mail->SMTPDebug = 2; 
+=======
+    // $mail->SMTPDebug = 2; 
+>>>>>>> b146d83e1c408ebbed0dd5627dec78c48fee96f3
+>>>>>>> 0e40b8051d6915b6d62701ebaebd749a02cabc4f
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -69,6 +77,18 @@ else {$result = "error";}
 }
 
 // Отображение результата
+<<<<<<< HEAD
 echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
 // header('Location: thankyou.html');
+=======
+<<<<<<< HEAD
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
+// header('Location: thankyou.html');
+=======
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
+header('Location: thankyou.html');
+>>>>>>> b146d83e1c408ebbed0dd5627dec78c48fee96f3
+>>>>>>> 0e40b8051d6915b6d62701ebaebd749a02cabc4f
