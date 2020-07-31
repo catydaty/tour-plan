@@ -60,13 +60,16 @@
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item__mobile_visible">
-              <a href="#" class="user navbar__user navbar__user__mobile_visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user__mobile_visible"
+              >
                 <img
                   src="img/user-avatar.jpeg"
                   alt="Avatar: Nathan dsa"
                   class="user__avatar"
                 />
-                <span class="user__name user__name_light ">Nathan</span>
+                <span class="user__name user__name_light">Nathan</span>
               </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item__mobile_visible">
@@ -246,7 +249,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="booking__button">View Other Options</button>
+              <button data-toggle="modal" class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div id="map" class="map"></div>
@@ -268,14 +271,20 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
           />
-          <button class="subscribe__button" name="submit_1" type="submit">Send</button>
+          <button class="subscribe__button" name="submit_1" type="submit">
+            Send
+          </button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -610,11 +619,17 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button name="submit_2" class="button footer__button" type="submit">Send</button>
+              <button
+                name="submit_2"
+                class="button footer__button"
+                type="submit"
+              >
+                Send
+              </button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -678,6 +693,47 @@
         <!-- /.footer-bottom -->
       </div>
     </footer>
+    <div class="modal" id="modal_id" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title_mb_3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="mail"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button name="submit_2" class="button modal__button" type="submit">
+            Send
+          </button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/parallax.min.js"></script>
