@@ -80,4 +80,12 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay__visible');
     modalDialog.removeClass('modal__dialog__visible');
   };
+// добавляем возможность отключения модального окна по нажатия кнопки esc 
+  document.addEventListener('keydown', function (closeModal) {
+    if (closeModal.keyCode === 27) {
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay__visible');
+    modalDialog.removeClass('modal__dialog__visible');
+  }});
 });
