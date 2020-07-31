@@ -1697,6 +1697,7 @@ template {
     grid-column-start: 1;
   }
   .modal__dialog {
+    width: 90%;
     padding: 20px 25px;
   }
   .modal__input {
