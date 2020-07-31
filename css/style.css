@@ -1561,6 +1561,9 @@ template {
   .modal__info {
     margin-top: 5px;
   }
+  .modal__dialog {
+    width: 90%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1697,7 +1700,6 @@ template {
     grid-column-start: 1;
   }
   .modal__dialog {
-    width: 90%;
     padding: 20px 25px;
   }
   .modal__input {
