@@ -1401,6 +1401,9 @@ template {
   .footer-bottom__rightside {
     grid-column-start: 3;
   }
+  .modal__info {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1555,6 +1558,9 @@ template {
   .ul-links {
     max-width: 300px;
   }
+  .modal__info {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1689,6 +1695,15 @@ template {
   }
   .footer-bottom__rightside {
     grid-column-start: 1;
+  }
+  .modal__dialog {
+    padding: 30px 76px;
+  }
+  .modal__input {
+    padding: 0 18px;
+  }
+  .modal__info {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

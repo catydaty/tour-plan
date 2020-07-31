@@ -80,8 +80,4 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay__visible');
     modalDialog.removeClass('modal__dialog__visible');
   };
-
-  document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) document.getElementById('modal_id').hidden = 1;
-  });
 });
