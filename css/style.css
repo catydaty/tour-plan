@@ -1133,12 +1133,14 @@ template {
 .footer__input {
   margin-bottom: 15px;
   flex-basis: 48%;
+  color: #BDBDBD;
 }
 
 .footer__message {
   height: 123px;
   flex-basis: 100%;
   margin-bottom: 23px;
+  color: #BDBDBD;
 }
 
 .footer__info {
