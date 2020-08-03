@@ -47,6 +47,10 @@ img {
   border: none;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1131,9 +1135,13 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+  color: #BDBDBD;
+}
+
+.footer__input_group {
   margin-bottom: 15px;
   flex-basis: 48%;
-  color: #BDBDBD;
 }
 
 .footer__message {
@@ -1266,13 +1274,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1302,7 +1314,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input_group {
     flex-basis: 100%;
   }
 }
@@ -1367,8 +1379,8 @@ template {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    flex-basis: 49%;
+  .footer__input_group {
+    flex-basis: 48%;
   }
   .footer__logo {
     grid-row: 1 / 2;
@@ -1554,7 +1566,7 @@ template {
     width: 48%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input_group {
     flex-basis: 100%;
   }
   .ul-links {

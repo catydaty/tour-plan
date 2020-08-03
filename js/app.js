@@ -90,5 +90,19 @@ $(document).ready(function () {
   }});
 
 // обработка форм
-  $('.modal__form').validate();
+  $('.form').each(function() {
+    $(this).validate({
+      errorClass: 'invalid',
+      messages: {
+        name: 'Please specify your name',
+        mail: {
+          required: 'We need your email address to contact you',
+          email: 'Your email address must be in the format of name@domain.com'
+        },
+        phone: {
+          required: 'Need your phone number'
+        },
+      }
+    });
+  })
 });
