@@ -88,4 +88,7 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay__visible');
     modalDialog.removeClass('modal__dialog__visible');
   }});
+
+// обработка форм
+  $('.modal__form').validate();
 });
