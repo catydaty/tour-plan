@@ -93,6 +93,11 @@ $(document).ready(function () {
   $('.form').each(function() {
     $(this).validate({
       errorClass: 'invalid',
+      rules: {
+        phone: {
+          required: true
+        }
+      },
       messages: {
         name: 'Please specify your name',
         mail: {
@@ -100,7 +105,7 @@ $(document).ready(function () {
           email: 'Your email address must be in the format of name@domain.com'
         },
         phone: {
-          required: 'Need your phone number'
+          required: 'Need your phone number',
         },
       }
     });
@@ -108,6 +113,6 @@ $(document).ready(function () {
 
 // добавляем маску в форму на телефон
   $(document).ready(function () {
-    $('.number').mask('+7 (999) 999-9999');
+    $('.num').mask('+7 (999) 999-9999');
   });
 });
