@@ -104,5 +104,10 @@ $(document).ready(function () {
         },
       }
     });
-  })
+  });
+
+// добавляем маску в форму на телефон
+  $(document).ready(function () {
+    $('.number').mask('+7 (999) 999-9999');
+  });
 });
