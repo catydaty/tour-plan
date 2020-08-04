@@ -110,4 +110,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('.num').mask('+7 (999) 999-9999');
   });
+
+// добавляем анимацию на сайт
+  AOS.init();
 });
